@@ -23,10 +23,10 @@ vhost_frame_app.set('port', port);
  * ----------------------------------
  */
 var vhost1_app = require('/usr/local/workspace/vhost1/app.js');
-vhost_frame_app.use(vhost('apple.localhost', vhost1_app));
+vhost_frame_app.use(vhost('api.priestctfx.com', vhost1_app));
 
 var vhost2_app = require('/usr/local/workspace/vhost2/app.js');
-vhost_frame_app.use(vhost('book.localhost', vhost2_app));
+vhost_frame_app.use(vhost('imagecrop.priestctfx.com', vhost2_app));
 
 /**
  * Create HTTP server.
